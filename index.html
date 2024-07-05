@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>JS Game</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="container__logoAlura">
+            <img src="img/Frame 6.png">
+        </div>
+        <div class="container__Inputs">
+            <textarea rows="4" cols="50" type="textarea" id="TextArea" placeholder="Digite seu texto" class="container__Inputs__Text">
+                
+            </textarea>
+            <div class="container__Inputs__AlertMessage">
+                <span><i class="bi bi-exclamation-circle-fill"></i>Apenas letras minúsculas e sem acento.</span>
+            </div>
+            <div class="container__Inputs__Buttons">
+                <button onclick="CriptText()" class="container__Inputs__Buttons__Criptografar">Criptografar</button>
+                <button onclick="DecriptText()" class="container__Inputs__Buttons__Descriptografar">Descriptografar</button>
+            </div>
+        </div>
+        <div class="container__Decodificador">
+            <div id="LimparDecodificador" class="container__Decodificador__Conteudo">
+                <div class="container__Decodificador__Conteudo_Imagem">
+                    <img src="img/High quality products 1 1.png">
+                </div>
+                <div class="container__Decodificador__Conteudo_Texto1">
+                    <span>Nenhuma mensagem encontrada</span>
+                </div>
+                <div class="container__Decodificador__Conteudo_Texto2">
+                    <span>Digite um texto que você deseja criptografar ou descriptografar.</span>
+                </div>
+            </div>
+            <div id="TextoTraduzido" class="container__Decodificador__TextoTraduzido">
+                <span>texto exemplo</span>
+            </div>
+            <button onclick="Copy()" id="BotaoCopiar">Copiar</button>
+        </div>
+    </div>
+    <script src="app.js" defer></script>
+</body>
+
+</html>
